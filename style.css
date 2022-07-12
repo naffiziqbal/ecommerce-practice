@@ -9,6 +9,15 @@
     --green-hover : #79b725;
     --gray : #5a5a5a;
 }
+li , a {
+    text-decoration: none;
+    list-style: none;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+}
 
 body{
     font-family: 'Rubik', sans-serif;;
@@ -40,6 +49,89 @@ body{
     color: red;
 }
 .top-content span a:hover{
-    text-decoration: none;
+    text-decoration: underline;    
+}
+.middle-header{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    height: 3rem;
+}
+.left-section{
+    position: relative;
+    width: 45%;
+    display: flex;
+    
+}
+.left-section  ul :nth-child(1) >li:hover {
+    color: var(--green-hover);
+
+}
+.left-section-left,.left-section-right{
+    width: 50%;
+    align-items: center;
+}
+.left-section ul {
+    display: block;
+
+}
+.left-section-left ul li {
+    padding: 20px 0;
+}
+.left-section-right ul li {
+    padding: 20px 0;
+}
+.left-section-left > ul {
+    display: block;
 }
 
+.dropdown{
+    display: none;
+}
+.left-section-left > ul:hover .dropdown{
+    display: block;
+    position: absolute;
+}
+
+.left-section-right > ul li {
+    display: block;
+}
+.dropdown{
+    color: black;
+    display: none;
+    width: 200px;
+    background: rgb(253, 251, 251);
+    text-align: center;
+
+}
+.left-section-right > ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.993);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.right-section{
+    width: 50%;
+    text-align: end;
+    
+}
+.right-section ul li{
+    display: inline;
+    margin: 0 20px;
+}
+.right-section  ul li:hover{
+    text-decoration: underline;
+}
