@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --yellow : #ffd200;
+    --green : #62ab00;
+    --green-hover : #79b725;
+    --gray : #5a5a5a;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.top-content{
+    background: var(--yellow);
+    height: 3rem;
+    padding: 1rem;
+    font-size: 14px;
+
+}
+.top-content button{
+    float: right;
+    background: #ffd200;
+    border: none;
+    font-size: 20px;
+
+}
+.top-content button:hover{
+    color: red;
+}
+.top-content span a{
+    color: red;
+}
+.top-content span a:hover{
+    text-decoration: none;
+}
+
