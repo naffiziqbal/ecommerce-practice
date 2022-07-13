@@ -211,3 +211,49 @@ button.search-button{
 .right-section-right{
     width: 10%;
 }
+
+.nav-bar{
+    align-items: center;
+    background: var(--green);
+    height: 50px;
+    width: 100%;
+}
+.nav-bar ul li{
+    padding: 10px;
+    display: inline-block;
+
+}
+.nav-bar > ul{
+    display: block;
+}
+.nav-bar ul li a{
+    text-transform: uppercase;
+
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+.nav-bar ul li  > ul li {
+    display: block;
+    transition: 1s ease;
+    background: rgba(235, 235, 235, 0.808);
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -ms-transition: 1s ease;
+    -o-transition: 1s ease;
+}
+.nav-bar ul > li > ul{
+    display: none;
+    padding: 1%;
+} 
+.nav-bar ul li:hover ul{
+    display: block;
+    position: absolute;
+}
+
+.nav-bar ul li  > ul li:hover{
+    color: var(--green-hover);
+
+}
+
