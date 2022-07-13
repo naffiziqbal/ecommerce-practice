@@ -8,8 +8,12 @@
     --green : #62ab00;
     --green-hover : #79b725;
     --gray : #5a5a5a;
+    --fade-gray : #66666662;
+    --white : #fff;
 }
 li , a {
+    color: #5a5a5a;
+
     text-decoration: none;
     list-style: none;
     transition: .5s ease;
@@ -87,6 +91,7 @@ body{
 
 .dropdown{
     display: none;
+    z-index: 2;
 }
 .left-section-left > ul:hover .dropdown{
     display: block;
@@ -111,21 +116,10 @@ body{
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .right-section{
+    display: flex;
     width: 50%;
-    text-align: end;
+    align-items: center;
     
 }
 .right-section ul li{
@@ -134,4 +128,86 @@ body{
 }
 .right-section  ul li:hover{
     text-decoration: underline;
+
+}
+
+.main-header{
+    display: flex;
+    align-items: center;
+    padding: 2% 0;
+}
+.main-header .left-section{
+    display: flex;
+    justify-content: space-between;
+}
+.call-to-action{
+    display: flex;
+    align-items: center;
+}
+
+.fa-headset{
+    margin: 0 2rem;
+}
+.cta-section p{
+    padding: 5% 0;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+}
+
+.cta-section p:nth-child(2):hover{
+    color: var(--green-hover);
+}
+
+input[type=search]{
+    font-size: 12px;
+    height: 40px;
+    width: 50%;
+    outline: none;
+    border: 1px solid var(--fade-gray);
+    padding: 1rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+button.search-button{
+    color: var(--white);
+    height: 40px;
+    width: 40px;
+    margin: 0 -10px;
+    background: var(--green);
+    border: none;
+    border-radius:0 5px 5px 0;
+    -webkit-border-radius:0 5px 5px 0;
+    -moz-border-radius:0 5px 5px 0;
+    -ms-border-radius:0 5px 5px 0;
+    -o-border-radius:0 5px 5px 0;
+}
+.add-to-cart{
+    color: var(--green);
+    height: 40px;
+    width: 40px;
+    border: 1px solid var(--fade-gray);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.fa-cart-shopping {
+    padding: 50% 10%;
+    display: block;
+    align-items: center;
+
+}
+.right-section-left{
+    text-align: center;
+    width: 90%;
+}
+.right-section-right{
+    width: 10%;
 }
