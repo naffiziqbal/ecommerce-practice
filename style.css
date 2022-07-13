@@ -257,3 +257,19 @@ button.search-button{
 
 }
 
+#promise-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+  .promise-section{
+    background: rgba(170, 170, 170, 0.096);
+    height: 100%;
+    width: 380px;
+    text-align: center;
+  padding: 3% 0;
+  margin: 20px 0;
+  font-size: 14px;
+  }

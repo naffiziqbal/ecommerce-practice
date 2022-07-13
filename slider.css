@@ -1,9 +1,10 @@
 * {box-sizing: border-box;}
 body {font-family: rubik, sans-serif;}
 .slider {display: none;}
-.slider img {vertical-align: middle;
-width: 1000px;
-height: 600px;}
+.slider img{
+  height: 600px;
+  width: 100%;
+}
 :root{
     --yellow : #ffd200;
     --green : #62ab00;
@@ -13,7 +14,8 @@ height: 600px;}
     --white : #fff;
 }
 #slideshow-container {
-    max-width: 1000px;
+    max-width: 1200px;
+    max-height: 600px;
     position: relative;
     margin: auto;
   }
@@ -82,3 +84,4 @@ height: 600px;}
     left: 50%
     ;
 }
+
